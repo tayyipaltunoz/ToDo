@@ -128,12 +128,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\LogInController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Context.cs" />
     <Compile Include="Models\Gorev.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Notlar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -510,6 +512,14 @@
     <Content Include="Dosyalar1\bootstrap-3.3.7\package.json" />
     <Content Include="Dosyalar1\bootstrap-3.3.7\README.md" />
     <Content Include="Dosyalar1\bootstrap-3.3.7\_config.yml" />
+    <Content Include="webLoginTheme\css\fontawesome-all.css" />
+    <Content Include="webLoginTheme\css\style.css" />
+    <Content Include="webLoginTheme\images\cover4.jpg" />
+    <Content Include="webLoginTheme\index.html" />
+    <Content Include="webLoginTheme\w3layouts-License.txt" />
+    <Content Include="webLoginTheme\webfonts\fa-brands-400.svg" />
+    <Content Include="webLoginTheme\webfonts\fa-regular-400.svg" />
+    <Content Include="webLoginTheme\webfonts\fa-solid-900.svg" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -534,6 +544,19 @@
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\GorevEkle.cshtml" />
     <Content Include="Views\Default\GorevGetir.cshtml" />
+    <Content Include="Views\LogIn\LogIn.cshtml" />
+    <Content Include="webLoginTheme\webfonts\fa-brands-400.eot" />
+    <Content Include="webLoginTheme\webfonts\fa-brands-400.ttf" />
+    <Content Include="webLoginTheme\webfonts\fa-brands-400.woff" />
+    <Content Include="webLoginTheme\webfonts\fa-brands-400.woff2" />
+    <Content Include="webLoginTheme\webfonts\fa-regular-400.eot" />
+    <Content Include="webLoginTheme\webfonts\fa-regular-400.ttf" />
+    <Content Include="webLoginTheme\webfonts\fa-regular-400.woff" />
+    <Content Include="webLoginTheme\webfonts\fa-regular-400.woff2" />
+    <Content Include="webLoginTheme\webfonts\fa-solid-900.eot" />
+    <Content Include="webLoginTheme\webfonts\fa-solid-900.ttf" />
+    <Content Include="webLoginTheme\webfonts\fa-solid-900.woff" />
+    <Content Include="webLoginTheme\webfonts\fa-solid-900.woff2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

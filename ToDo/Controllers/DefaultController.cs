@@ -11,7 +11,7 @@ namespace ToDo.Controllers
     {
         private Context context = new Context();
         // GET: Default
-
+        [Authorize]
         public ActionResult Index()
         {
             var degerler = context.Gorevler.ToList();

@@ -9,5 +9,6 @@ namespace ToDo.Models
     public class Context : DbContext
     {
         public DbSet<Gorev> Gorevler { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
