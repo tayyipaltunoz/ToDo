@@ -1,0 +1,17 @@
+﻿@model ToDo.Models.Gorev
+
+@{
+    ViewBag.Title = "GorevEkle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GorevEkle</h2>
+
+<br />
+
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.GorevName)
+    @Html.TextBoxFor(x => x.GorevName, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Ekle</button>
+</form>

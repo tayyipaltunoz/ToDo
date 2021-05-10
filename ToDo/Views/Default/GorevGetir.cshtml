@@ -1,0 +1,21 @@
+﻿@model ToDo.Models.Gorev
+@{
+    ViewBag.Title = "GorevGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Görev Güncelle</h2>
+
+<br />
+
+@using (Html.BeginForm("GorevGuncelle", "Default", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(x => x.GorevName)
+        @Html.TextBoxFor(x => x.GorevName, new { @class = "form-control" })
+        @Html.HiddenFor(x => x.Id)
+    </div>
+
+    <button class="btn btn-warning">Güncelle</button>
+}
+
