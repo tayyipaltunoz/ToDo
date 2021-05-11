@@ -11,7 +11,9 @@
 @using (Html.BeginForm("GorevGuncelle", "Default", FormMethod.Post))
 {
     <div class="form-group">
-        @Html.LabelFor(x => x.GorevName)
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item active"><p>Güncellenecek görev : </p> @ViewBag.gorev</li>
+        </ol>
         @Html.TextBoxFor(x => x.GorevName, new { @class = "form-control" })
         @Html.HiddenFor(x => x.Id)
     </div>

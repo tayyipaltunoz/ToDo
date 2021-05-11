@@ -1,0 +1,27 @@
+﻿@using ToDo.Models;
+@model List<ToDo.Models.Gorev>
+@{
+    ViewBag.Title = "Today";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Today</h2>
+
+<table class="table table-bordered" style="width:40% ;margin-left:50%">
+
+    <tr style="font-size:large; color:#4d81a5">
+        <td>Görevler</td>
+        <td>Görev Ekle</td>
+    </tr>
+
+    @foreach (var grv in @Model)
+    {
+        <tr>
+            <td>@grv.GorevName</td>
+            <td><a href="" class="btn btn-info"   >Ekle</a></td>
+        </tr>
+    }
+   
+
+</table>
+

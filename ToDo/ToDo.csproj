@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\LogInController.cs" />
+    <Compile Include="Controllers\TodayController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -557,6 +558,7 @@
     <Content Include="webLoginTheme\webfonts\fa-solid-900.ttf" />
     <Content Include="webLoginTheme\webfonts\fa-solid-900.woff" />
     <Content Include="webLoginTheme\webfonts\fa-solid-900.woff2" />
+    <Content Include="Views\Today\Today.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

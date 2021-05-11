@@ -58,6 +58,9 @@ namespace ToDo.Controllers
 
         public ActionResult GorevGetir(int id)
         {
+            var cr = context.Gorevler.Where(x => x.Id == id).Select(y => y.GorevName).FirstOrDefault();
+            ViewBag.gorev = cr;
+
             var gorev = context.Gorevler.Find(id);
             return View("GorevGetir", gorev);
         }
